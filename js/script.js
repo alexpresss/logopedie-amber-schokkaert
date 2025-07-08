@@ -11,6 +11,12 @@ document.querySelectorAll("nav a").forEach(link => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  //Automatisch jaartal invullen
+  const yearSpan = document.getElementById("current-year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+  
   const toggleBtn = document.getElementById("theme-toggle");
   const icon = toggleBtn.querySelector("i");
 
@@ -47,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Velden ophalen
       const name = form.querySelector('input[name="name"]');
       const email = form.querySelector('input[name="email"]');
-      const message = form.querySelector('textarea[name="bericht"]');
+      const message = form.querySelector('textarea[name="message"]');
 
       // Validatie
       if (!name.value.trim()) {
@@ -112,4 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return re.test(String(email).toLowerCase());
     }
   }
+});
+
+// Automatisch jaartal in footer invullen
+document.addEventListener("DOMContentLoaded", () => {
+  
 });

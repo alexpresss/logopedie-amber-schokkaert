@@ -250,6 +250,11 @@ body.dark-mode nav a {
   color: #fff;
 }
 
+body.dark-mode th {
+  background-color: #2e5d44;
+  color: white;
+}
+
 body.dark-mode .card {
   background-color: #2f4739;
   color: #eee;
