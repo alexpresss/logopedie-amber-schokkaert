@@ -2,14 +2,14 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background-color: #e4f9ee;
+  background-color: #88c27a;
   color: #333;
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3 {
-  color: #3a7f5f;
+  color: #2e2a72;
 }
 
 a {
@@ -24,9 +24,9 @@ a:hover {
 
 /* ========== Header ========== */
 header {
-  background-color: #94d9a4;
+  background-color: #fff;
   color: #fff;
-  padding: 2rem 1rem;
+  padding: 0.01rem 1rem;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@ header {
 }
 
 .logo {
-  max-height: 80px;
+  max-height: 200px;
 }
 
 .header-text h1 {
@@ -50,6 +50,7 @@ header {
 
 .header-text p {
   margin: 0.5rem 0 0;
+  color: #2e2a72;
 }
 
 .about-container {
@@ -64,7 +65,7 @@ header {
 }
 
 .about-image {
-  flex: 0 0 300px;
+  flex: 0 0 250px;
   text-align: right;
 }
 
@@ -86,7 +87,7 @@ header {
   right: 1rem;
   background: transparent;
   border: none;
-  color: #fff;
+  color: #2e2a72;
   font-size: 1.8rem;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -98,7 +99,7 @@ header {
 
 /* ========== Navigatie ========== */
 nav {
-  background-color: #3a7f5f;
+  background-color: #2e2a72;
   padding: 1rem;
   text-align: center;
 }
@@ -140,7 +141,7 @@ th, td {
 }
 
 th {
-  background-color: #94d9a4;
+  background-color: #2e2a72;
   color: white;
 }
 
@@ -153,7 +154,7 @@ th {
 form label {
   display: block;
   margin: 1rem 0 0.5rem;
-  color: #3a7f5f;
+  color: #2e2a72;
   font-weight: bold;
 }
 
@@ -169,7 +170,7 @@ form textarea {
 
 form button {
   margin-top: 1rem;
-  background-color: #3a7f5f;
+  background-color: #2e2a72;
   color: #fff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -180,7 +181,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #98d8ae;
+  background-color: #88c27a;
   transform: scale(1.05);
 }
 
@@ -226,7 +227,7 @@ form button:hover {
 }
 
 .contact-details a {
-  color: #3a7f5f;
+  color: #2e2a72;
   text-decoration: none;
 }
 
@@ -244,7 +245,7 @@ form button:hover {
 
 /* ========== Footer ========== */
 footer {
-  background-color: #3a7f5f;
+  background-color: #2e2a72;
   color: white;
   text-align: center;
   padding: 1.5rem;
@@ -273,6 +274,11 @@ body.dark-mode {
 body.dark-mode header {
   background-color: #2e5d44;
 }
+
+body.dark-mode header p {
+  color: #fff;
+}
+
 
 body.dark-mode nav {
   background-color: #234433;
